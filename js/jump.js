@@ -16,7 +16,7 @@
   //var demoItems = document.querySelectorAll('.grid-item')
     var toUrl =  getQueryStr("toUrl");
      console.log("要跳转的链接："+toUrl);
-     this.location = toUrl;
+     this.location = decodeURI(toUrl);
 }());
  
 // 调用方法
